@@ -3,12 +3,13 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "com.trustasia.fidosdk.sample"
-        minSdk 24
-        targetSdk 31
+        minSdkVersion 24
+        //noinspection OldTargetApi
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
