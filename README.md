@@ -13,7 +13,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-        implementation 'com.github.trustasia-com:android-wekey-sdk:Tag'
+        implementation 'com.github.trustasia-com:android-wekey-sdk:v1.0.1'
 }
 ```
 
