@@ -7,7 +7,6 @@ public interface IWebauthn {
 
     void init(String url);
 
-
     /**
      * 发起make请求并自动调用api返回rp
      *

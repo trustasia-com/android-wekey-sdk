@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             msg = "System error";
         }
         showToast(msg);
+        FIDOClient.getInstance().init("https://api-dev.wekey.com/ta-webauthn-demo/");
     }
 
 }
