@@ -49,6 +49,22 @@ public interface IWebauthn {
     void get(FragmentActivity activity, String userName, String displayName, boolean rk, Callback<String> callback);
 }
 ```
+
+Make a get request
+```java
+FIDOClient.getInstance().get(this, userName, displayName, rk, new Callback<String>() {
+    @Override
+    public void onResp(String data) {
+        //handle rp server data
+    }
+
+    @Override
+    public void onError(Throwable throwable) {
+        //handle error
+    }
+});
+```
+
 ## Error Code
 This sdk use `onActivityResult(int requestCode, int resultCode, @Nullable Intent data)` to pass error code.
 The following shows the code mapping table:
